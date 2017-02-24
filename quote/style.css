@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Oleo+Script');
+
+#quote{
+  font-family: 'Oleo Script', cursive;
+  font-size:30px;
+   animation:fadeIn ease-in 3s;
+  
+/*   transition : font  ease-in 1s; */
+  ;
+}
+
+
+#QM{
+  max-width: 60%;
+  min-width:30%;
+  min-height: 150px;
+  max-height: 700px;
+}
+
+
+#buttons{
+display: flex;
+  justify-content: space-between;
+ max-width: 700px;
+  margin: 0 auto;
+ padding: 10px 0;
+}
+
+
+
+#getMessage, #tweet{
+  font-family: TIMES NEW ROMAN;
+  font-size:18pt;
+  font-weight: normal;
+  border: none;
+    padding: 9px 9px 9px 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+       margin: 4px 2px;
+  background-color: white;
+    color: black;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+}
+
+#getMessage:hover{ background-color: black;
+  color: white;}
+
+#tweet:hover {
+    background-color: black;
+  color: white;}
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+
+}

@@ -1,82 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset='utf-8'>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	  <link rel="stylesheet" href="style.css">
-	  <script src="game.js"></script>
-
-
-	<title>Tic Tac Toe Game</title>
+	<title>My Potfolio</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+	<script src="https://use.fontawesome.com/c379d17645.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 <body>
-<div id="train">
-	
-	test
-</div>
-<div class="container">
-<h1 class="text-center" id="h1">Tic Tac Toe Game</h1>
-<!--
-<h2  id="otherside">Other side</h2>
-<h2  id="side">Side</h2>
--->
-<table id="table" class="text-center">
-  <tr>
-    <th id="1" class="item" style="border-top-left-radius: 8px;"></th>
-    <th id="2" class="item"></th> 
-    <th id="3" class="item" style="border-top-right-radius: 8px;"></th>
-  </tr>
-  <tr>
-    <td id="4" class="item"></td>
-    <td id="5" class="item"></td>
-    <td id="6" class="item"></td>
-  </tr>
-  <tr>
-    <td id="7" class="item" style="border-bottom-left-radius: 8px;"></td>
-    <td id="8" class="item"></td>
-    <td id="9" class="item" style="border-bottom-right-radius: 8px;"></td>
-  </tr>
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="nav">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+				<a href="#lpage" class="navbar-brand">My Portfolio</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul class="nav navbar-nav">
+					<li><a href="#about">About</a></li>
+					<li><a href="#my_projects">My Projects</a></li>
+					<li><a href="#my_certificates">My Certificates</a></li>
+					<li><a href="#my_skills">My Skills</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-</table>
-<!--
-<h2 class="text-center" id="test">Modal Example</h2>
--->
-</div>
-
-<div id="game_over">
-<div id="game_over_content" class="modal-content">
-
-	<h1 class="text-center">Game over</h1>
-	<h3 id="result" class="text-center"></h3>
-	<div class = "row text-center">
-	<button id="play" target="_blank" class = "btn btn-success ">Play again?</button>	
+	<div id="lpage" class="screen">
+		<div>
+			<h1> Hello</h1>
+			<h1>wellcome to my Porfolio</h1>
+		</div>
+		<button type="button" id="btn" class="btn btn-primary myclass"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
 	</div>
-</div>	
-</div>
+	<div id="about" class="screen">
+		<h1>About Me</h1>
+	</div>
+	<div id="my_projects" class="screen">
+		<h1>My Projects</h1>
+		<div class="row">
+			<div class="col-lg-4 col-sm-6">
+				<h3>Tic Tac Toe Game</h3>
+				<img src="img/tic_tac_toe_game.png" class="img-responsive img-rounded">
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<h3>Random quote Machine</h3><a href="quote/index.html">
+				<img src="img/random_quote_machine.png" class="img-responsive img-rounded"></a>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<h3>Twitch TV App</h3>
+				<img src="img/simon_game.png" class="img-responsive img-rounded">
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<h3>Calculator App</h3>
+				<img src="img/calculator_app.png" class="img-responsive img-rounded">
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<h3>Simon Game</h3>
+				<img src="img/simon_game.png" class="img-responsive img-rounded">
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<h3>Wikipedia Viever</h3>
+				<img src="img/simon_game.png" class="img-responsive img-rounded">
+			</div>		
+		</div>
+		<button type="button" id="btn2" class="btn btn-primary myclass"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+	</div>
+	<div id="my_certificates" class="screen">
+		<h1>My Certificates</h1>
+	</div>
+	<div id="my_skills" class="screen">
+		<h1>My Skills</h1>
+	</div>
 
 
 
 
 
-<!-- Trigger/Open The Modal -->
 
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <h3 class="text-center">Choose side.</h3>
-	<div id="buttons" class = "row text-center">
-		<button id="Tic" target="_blank" class = "btn btn-success">X</button>
- 		<button id = "Tac" class = "btn btn-success">O</button>                                 
-    </div>
-  </div>
-
-</div>
-
-    <footer id="footer" class="center-block text-center" ><p style="font-family:TIMES NEW ROMAN; font-size:15pt;font-weight: 500;color:black;">written and coded by <a href="https://www.freecodecamp.com/stanislavkotsar" target="blank" style="color: black">Stanislav Kotsar</p></footer>
-
+<script src="lib/jquery-3.1.1.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
