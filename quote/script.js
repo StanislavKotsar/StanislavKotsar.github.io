@@ -8,7 +8,7 @@ $(document).ready(function() {
   $.getJSON("https://www.quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback="  + new Date().getTime(), function(json){
      
 
-    json[0]=val;
+var val =json[0]; 
 var content =val.content;
     
                
