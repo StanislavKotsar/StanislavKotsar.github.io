@@ -1,0 +1,79 @@
+body{
+  background-color:#DEFDE1;
+}
+h1{
+  font-family: 'Linux Libertine',Georgia,Times,serif;
+  color:black;
+}
+i{
+  color:black;
+}
+#result{
+  background-color:#FFF5FD;
+  max-width:1000px;
+}
+
+#word{
+  font-size:14pt;
+  font-family:Copperplate, "Copperplate Gothic Light", fantasy;
+  color:#DB2B2B;
+  font-weight: 900;
+}
+#text{
+  font-family:Comic Sans, Comic Sans MS, cursive;
+  color:#2A2E9B;
+}
+.stylish-input-group .input-group-addon{
+    background: #F3FF7C !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+  
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+    margin:0 auto;
+    max-width:300px;
+}
+#search{
+  background-color:#F3FF7C;
+  font-family:Arial Black;
+}
+
+.footer {
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1px;
+  
+  text-align: center;
+}
+#footer{
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  text-align: center;
+  font-family:TIMES NEW ROMAN;
+  font-size:15pt;
+  font-weight: 500;
+  color:black;
+}
+#random{
+  font-size:14pt;
+  font-family:Copperplate, "Copperplate Gothic Light", fantasy;
+  color:#DB2B2B;
+  font-weight: 900;
+  background-color:#FFF5FD;
+}
+.container{
+  max-width:700px;
+  width:80%;
+}
+#ok{
+  height:inherit;
+  padding:0;
+}
