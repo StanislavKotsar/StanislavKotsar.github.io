@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Press+Start+2P');
 
 body{
 			margin-top: 50px;
@@ -12,8 +12,18 @@ h1{
   font-size: 4.5em; 
 }
 
+h4{
+  font-size: 2em;
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 1px;
+}
+h5{
+    font-size: 1em;
+    font-family: 'Press Start 2P', cursive;
+}
+
 		.container{
-			width: 800px;
+			width: 70%;
 			margin: 0 auto;
       background-color:#FF9B70;
       
@@ -65,8 +75,6 @@ h1{
 
 #online{
   color:green;
-  font-family:verdana;
-  
 
 }
 #result{
@@ -102,7 +110,8 @@ img{
   border-bottom-right-radius:8px;
 }
 .well{
-  max-width:700px;
+  max-width:90%;
+  margin: % auto;
 }
 #close{
   background-color:black;
