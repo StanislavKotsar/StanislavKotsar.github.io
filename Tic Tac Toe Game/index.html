@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	  <link rel="stylesheet" href="style.css">
+	  <script src="game.js"></script>
+
+
+	<title>Tic Tac Toe Game</title>
+</head>
+<body>
+<div id="train">
+	
+	test
+</div>
+<div class="container">
+<h1 class="text-center" id="h1">Tic Tac Toe Game</h1>
+<!--
+<h2  id="otherside">Other side</h2>
+<h2  id="side">Side</h2>
+-->
+<table id="table" class="text-center">
+  <tr>
+    <th id="1" class="item" style="border-top-left-radius: 8px;"></th>
+    <th id="2" class="item"></th> 
+    <th id="3" class="item" style="border-top-right-radius: 8px;"></th>
+  </tr>
+  <tr>
+    <td id="4" class="item"></td>
+    <td id="5" class="item"></td>
+    <td id="6" class="item"></td>
+  </tr>
+  <tr>
+    <td id="7" class="item" style="border-bottom-left-radius: 8px;"></td>
+    <td id="8" class="item"></td>
+    <td id="9" class="item" style="border-bottom-right-radius: 8px;"></td>
+  </tr>
+
+</table>
+<!--
+<h2 class="text-center" id="test">Modal Example</h2>
+-->
+</div>
+
+<div id="game_over">
+<div id="game_over_content" class="modal-content">
+
+	<h1 class="text-center">Game over</h1>
+	<h3 id="result" class="text-center"></h3>
+	<div class = "row text-center">
+	<button id="play" target="_blank" class = "btn btn-success ">Play again?</button>	
+	</div>
+</div>	
+</div>
+
+
+
+
+
+<!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <h3 class="text-center">Choose side.</h3>
+	<div id="buttons" class = "row text-center">
+		<button id="Tic" target="_blank" class = "btn btn-success">X</button>
+ 		<button id = "Tac" class = "btn btn-success">O</button>                                 
+    </div>
+  </div>
+
+</div>
+
+    <footer id="footer" class="center-block text-center" ><p style="font-family:TIMES NEW ROMAN; font-size:15pt;font-weight: 500;color:black;">written and coded by <a href="https://www.freecodecamp.com/stanislavkotsar" target="blank" style="color: black">Stanislav Kotsar</p></footer>
+
+</body>
+</html>
