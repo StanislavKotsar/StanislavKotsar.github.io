@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	 <script src="simonGame.js"></script>
+	<title>Simon Game</title>
+
+</head>
+<body>
+<div class="container text-center" id="container">
+<h1 id="sg"><span id="simon">Simon</span> <span id="g">G</span><span id="a">a</span><span id="m">m</span><span id="e">e</span></h1>
+
+<div style="position: relative;">
+
+<svg width="540" height="540" stroke="black">
+  <path id="littleC"
+        d="M 70 270
+        A 200, 200 1 0 1 470 270
+        A 200, 200 1 0 1 70 270
+        "
+  />
+  <path class="item" id="greenC"
+        d=" M 270, 10
+        A 260, 260 0 0 0 10, 270
+        L 140, 270
+        A 130, 130 1 0 1 270 140
+          Z
+        "
+    />
+    <path class="item" id="redC"
+      d="
+      M 270, 10
+      A 260, 260 1 0 1 530 270
+      L 400 270
+      A 130, 130 0 0 0 270 140
+      Z
+      "
+    />
+    <path class="item" id="blueC"
+      d="
+      M 530 270
+      A 260, 260 1 0 1 270 530
+      L 270 400
+      A 130, 130 0 0 0 400 270
+      Z
+      "
+    />
+    <path class="item" id="yellowC"
+      d="
+      M 270 530
+      A 260, 260 1 0 1 10 270
+      L 140 270
+      A 130, 130 0 0 0 270 400
+      Z
+      "
+    />
+    <path id = "strictC" d="
+      M 360 250
+      A 8, 8 1 0 1 344 250
+      A 8, 8 1 0 1 360 250
+      
+    "/>
+
+</svg>
+
+
+</div>
+
+
+
+
+<span id="gameS">Simon</span>
+<div class="well" id="screen"></div>
+<div id="controls" class="row">
+<div id="buttons">
+<button id = "start" class = "btn btn-info game-button" >
+        Start
+  </button> 
+ <button id = "strict" class = "btn btn-info game-button" >
+        Srict
+</button>
+</div>
+
+
+</div><!--controls-->
+
+<div class="three">
+  <div class="button-wrap" id="toggle">
+    <div class="button-bg">
+      <div class="button-out" >on</div>
+      <div class="button-in"><span >off</span></div>
+      <div class="button-switch"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div id="game_over">
+<div id="game_over_content" class="modal-content">
+
+  <h1 class="text-center" id="sign">Game over:)</h1>
+  <h3 id="result" class="text-center"></h3>
+  <div class = "row text-center">
+  <button id="play" target="_blank" class = "btn btn-success ">Play again?</button> 
+  </div>
+</div>  
+</div>
+
+
+
+</div><!--container-->
+
+
+
+</body>
+<div id="footer"><p>written and coded by <a href="https://www.freecodecamp.com/stanislavkotsar" target="blank" style="color: black">Stanislav Kotsar</p></div>
+
+</html>
