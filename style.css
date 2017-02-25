@@ -7,7 +7,7 @@ body{
 }
 
 
-#btn{
+#btn, #btn2{
 	outline: none;
 	background-color: transparent;
 	border: 0;
@@ -17,6 +17,12 @@ body{
 	margin: 0 auto;   
 	
 }
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border: 0px;
+    border-color: transparent;
+}
+
 
 #btn:hover{
 	background-color: rgba(62, 62, 62, 0.7);
@@ -101,7 +107,7 @@ h3{
 	text-align: center;
 }
 img{
-	width: 80%;
+	width: 75%;
 	margin: 0 auto;
 }
 
@@ -131,10 +137,7 @@ img{
   	justify-content: space-between;
 
 }
-#btn2{
-	align-self: flex-end;
-	margin: 3% auto;
-}
+
 
 .row{
 	margin:  auto;
