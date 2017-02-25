@@ -34,22 +34,22 @@ function reset(){
     dot=0;
     act=0;
 }
-// function change(t){
-//       switch(t){
-//       case "plus":
-//         operation="+"; 
-//         break;
-//       case "minus":
-//         operation="-";
-//         break;
-//       case "multiply":
-//         operation="*";
-//         break;
-//       case "division":
-//         operation="/";
-//         break;
-//     }
-// }
+function change(t){
+      switch(t){
+      case "plus":
+        operation="+"; 
+        break;
+      case "minus":
+        operation="-";
+        break;
+      case "multiply":
+        operation="*";
+        break;
+      case "division":
+        operation="/";
+        break;
+    }
+}
 
 $(this).on("click", function (event){
  var t=event.target.id;
@@ -141,49 +141,49 @@ if(t==="dot"&&dot===0&&l.length>0){
     }
   
 
-  //  if(t==="plus"||t==="minus"||t==="multiply"||t==="division"){
-  //   change(t);
-  //   operation="+"; 
-  //   num = Number(number);
-  //   if(act===1){
-  //     addN();
-  //   }else if(act===0){
-  //     actZero();
-  //     }
-  //   reset();
-  // }
-  if(t==="minus"){
-    operation="-";
+   if(t==="plus"||t==="minus"||t==="multiply"||t==="division"){
+    change(t);
+    operation="+"; 
     num = Number(number);
-    if(act>0){
+    if(act===1){
       addN();
-    }else if(act<1){
+    }else if(act===0){
       actZero();
       }
     reset();
   }
+  // if(t==="minus"){
+  //   operation="-";
+  //   num = Number(number);
+  //   if(act>0){
+  //     addN();
+  //   }else if(act<1){
+  //     actZero();
+  //     }
+  //   reset();
+  // }
 
-  if(t==="multiply"){
-    operation="*";
-    num = Number(number);
-    if(act>0){
-      addN(); 
-    }else if(act<1){
-      actZero();
-    }
-    reset();
+  // if(t==="multiply"){
+  //   operation="*";
+  //   num = Number(number);
+  //   if(act>0){
+  //     addN(); 
+  //   }else if(act<1){
+  //     actZero();
+  //   }
+  //   reset();
     
-  }
-  if(t==="division"){
-    operation="/";
-    num = Number(number);
-    if(act>0){
-       addN();  
-    }else if(act<1){
-      actZero();
-    }
-    reset();
-  }
+  // }
+  // if(t==="division"){
+  //   operation="/";
+  //   num = Number(number);
+  //   if(act>0){
+  //      addN();  
+  //   }else if(act<1){
+  //     actZero();
+  //   }
+  //   reset();
+  // }
 
   if(pl.length>3){
 
