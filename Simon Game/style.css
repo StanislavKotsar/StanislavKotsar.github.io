@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One');
 
 body{background-image:url(http://i.imgsafe.org/295090663f.jpg);
   min-height: 100%;
   
 }
 
-
+h1{
+  font-family: 'Fugaz One', cursive;
+  letter-spacing: 2px;
+  font-size:50px;
+  padding: 0;
+  margin-top: 17px;
+  margin-bottom: 0;
+  text-shadow:
+         0px 4px 3px rgba(0,0,0,0.4),
+         0px 8px 13px rgba(0,0,0,0.1),
+         0px 18px 23px rgba(0,0,0,0.1);
+}
 
 svg{
   margin-top: 50px;
@@ -126,7 +138,7 @@ color: #EBCFF3;
 }
 #sg{
 
-  font-family: Comic Sans, Comic Sans MS, cursive;
+  font-family: 'Fugaz One', cursive;
 }
 #strictC{
 fill:#33807B;
