@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
 body{
     background-color: #EEF7FA;
 }
@@ -59,7 +61,7 @@ display: flex;
 
 
 #Tic, #Tac{
-  font-family: font-family: Apple Chancery, cursive;
+  font-family: 'Fredoka One', cursive;
   font-weight: 900;
   font-size:18pt;
   font-weight: normal;
@@ -85,6 +87,11 @@ display: flex;
     position:fixed;
     float: left;
   }
+
+.item{
+  font-family: 'Fredoka One', cursive;
+}
+
 
   #side{
     
@@ -116,7 +123,7 @@ th, td, tr {
      height:120px;
      width:120px;
      margin: 10px;
-     font-family: sans-serif;
+     font-family: 'Fredoka One', cursive;
      font-weight: 900;
      font-size: 60px;
      text-align: center;
