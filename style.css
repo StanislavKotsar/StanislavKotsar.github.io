@@ -116,6 +116,12 @@ img{
 		0px 18px 23px rgba(0,0,0,0.1);
 }
 
+.svg{
+	width: 256px;
+	box-shadow:none;
+	margin: 0 auto;
+}
+
 #cert{
 	width: 45%;
 	margin: 5% auto;
@@ -149,13 +155,17 @@ img{
 }
 
 
-.row{
-	margin:  auto;
+#my_projects .row{
+	margin: 0 auto;
 }
  
+.col-lg-6{
+	margin: 0 auto;
+
+} 
 .col-lg-4 div{
 	width: 25%;
 	height: 100px;
 	margin:  auto;
-	background-color: pink;
+
 }
