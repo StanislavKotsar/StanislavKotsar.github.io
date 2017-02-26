@@ -17,7 +17,7 @@ function addN(){
   pl.push(operation);
   pl.push(num); 
   string = string.concat(num, operation);
-  lScreen.textContent = string;
+  // lScreen.textContent = string;
 
 }
 
@@ -25,7 +25,7 @@ function actZero(){
   pl.push(num);
   pl.push(operation);
   string = string.concat(num, operation);
-  lScreen.textContent = string;
+  // lScreen.textContent = string;
 
 }
 
@@ -70,7 +70,7 @@ if(t===$("#AC").text()||t==="CE"){
   act = 0; 
   $("#screen").html("0");
   string = "";
-  lScreen.textContent = string;
+  // lScreen.textContent = string;
 
 }
  if(t==="zero"&&number.length<10){
@@ -188,7 +188,7 @@ if(t==="dot"&&dot===0&&l.length>0){
   if(pl.length>3){
 
     if(string.length<30){
-      lScreen.textContent = string;
+      // lScreen.textContent = string;
     }
     var opert = pl[1];
     var add = pl[3];
