@@ -234,7 +234,6 @@ img{
 
 }
 .screen{
-	padding-top: 5%;
 	position: relative;
 	display: flex;
   	flex-direction: column;
