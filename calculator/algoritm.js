@@ -142,8 +142,7 @@ if(t==="dot"&&dot===0&&l.length>0){
   
 
 //    if(t==="plus"||t==="minus"||t==="multiply"||t==="division"){
-//     change(t);
-//     operation="+"; 
+//     change(t); 
 //     num = Number(number);
 //     if(act===1){
 //       addN();
