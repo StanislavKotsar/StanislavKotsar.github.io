@@ -152,6 +152,19 @@ if(t==="dot"&&dot===0&&l.length>0){
 //       }
 //     reset();
 //   }
+  
+    if(t==="plus"){
+    operation="+";
+    num = Number(number);
+    if(act>0){
+      addN();
+    }else if(act<1){
+      actZero();
+      }
+    reset();
+  }
+  
+  
   if(t==="minus"){
     operation="-";
     num = Number(number);
