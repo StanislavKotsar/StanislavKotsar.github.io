@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One|Gloria+Hallelujah|Gochi+Hand|Lemon');
 
-body{
+body> div{
  	margin: 0;
 }
 
@@ -112,7 +112,7 @@ body{
 
 .col-lg-4 {
 
-	margin-bottom:  2%;
+	margin-bottom:  3%;
 
 }
 
@@ -167,6 +167,7 @@ body{
 #contact > div:last-of-type p{
 	font-size: 1em;
 	width: 100%;
+	margin-bottom: 2%;
 
 }
 
