@@ -141,9 +141,8 @@ if(t==="dot"&&dot===0&&l.length>0){
     }
   
 
-<<<<<<< HEAD
-   if(t==="plus"||t==="minus"||t==="multiply"||t==="division"){
-    change(t);
+
+
 
    if(t==="plus"||t==="minus"||t==="multiply"||t==="division"){
     change(t); 
