@@ -18,3 +18,6 @@ $('a[href*="#"]:not([href="#"])').click(function() {
     }
   }
 });
+
+var today = new Date();
+var year = today.getFullYear();
