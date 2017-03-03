@@ -1,11 +1,3 @@
-// var divHeight = window.innerHeight;
-// var divs = document.getElementsByClassName("screen");
-
-// for(var i = 0; i< divs.length; i++){
-// 	divs[i].style.height = divHeight+"px";
-// 	divs[i].style.width = "100%";
-// }
-
 $('a[href*="#"]:not([href="#"])').click(function() {
   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
     var target = $(this.hash);
@@ -18,3 +10,7 @@ $('a[href*="#"]:not([href="#"])').click(function() {
     }
   }
 });
+
+var today = new Date();
+var year = today.getFullYear();
+document.getElementById("date").textContent = year;
