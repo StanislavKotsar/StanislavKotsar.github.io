@@ -141,66 +141,20 @@ if(t==="dot"&&dot===0&&l.length>0){
     }
   
 
-<<<<<<< HEAD
-   if(t==="plus"||t==="minus"||t==="multiply"||t==="division"){
-    change(t);
-=======
-//    if(t==="plus"||t==="minus"||t==="multiply"||t==="division"){
-//     change(t); 
-//     num = Number(number);
-//     if(act===1){
-//       addN();
-//     }else if(act===0){
-//       actZero();
-//       }
-//     reset();
-//   }
-  
-    if(t==="plus"){
-    operation="+";
-    num = Number(number);
-    if(act>0){
-      addN();
-    }else if(act<1){
-      actZero();
-      }
-    reset();
-  }
-  
-  
-  if(t==="minus"){
-    operation="-";
->>>>>>> origin/master
-    num = Number(number);
-    if(act>0){
-      addN();
-    }else if(act<1){
-      actZero();
-      }
-    reset();
-  }
 
-  if(t==="multiply"){
-    operation="*";
+
+
+   if(t==="plus"||t==="minus"||t==="multiply"||t==="division"){
+    change(t); 
     num = Number(number);
-    if(act>0){
-      addN(); 
-    }else if(act<1){
+    if(act===1){
+      addN();
+    }else if(act===0){
       actZero();
-    }
-    reset();
-    
-  }
-  if(t==="division"){
-    operation="/";
-    num = Number(number);
-    if(act>0){
-       addN();  
-    }else if(act<1){
-      actZero();
-    }
+      }
     reset();
   }
+  
 
   if(pl.length>3){
 
