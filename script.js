@@ -13,8 +13,5 @@ $('a[href*="#"]:not([href="#"])').click(function() {
 
 var today = new Date();
 var year = today.getFullYear();
-<<<<<<< HEAD
+
 document.getElementById("date").textContent = year;
-=======
-document.getElementById("date").textContent = year;
->>>>>>> origin/master
