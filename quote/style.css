@@ -70,10 +70,18 @@ display: flex;
     background-color: black;
   color: white;}
 #footer {
+   font-family:TIMES NEW ROMAN;
+   font-size:15pt;
+   font-weight: 500;
+   color:black;
    position:fixed;
    left:0px;
    bottom:0px;
    height:30px;
    width:100%;
 
+}
+
+a{
+  color: black;
 }
