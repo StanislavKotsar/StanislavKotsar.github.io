@@ -1,11 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Righteous');
 
 body{
-    background-color: #EEF7FA;
+
+
+background: #A1FFCE; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #A1FFCE , #FAFFD1); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #A1FFCE , #FAFFD1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        
+        
 }
-#h1{
-	margin-top:25px;
-	font-family:TIMES NEW ROMAN;
+.container > h1{
+	margin-top: 3%;
+	font-family: 'Fredoka One', cursive;
+  font-size: 4em;
+  letter-spacing: 2px;
+  color: red;
+}
+
+span{
+  color: green;
 }
 
 .modal {
@@ -102,6 +116,7 @@ position:static;
 table{   
 text-align: center;
 margin: auto;
+margin-top: 5%;
 border: 1px solid black;
 border-collapse: separate;
 
