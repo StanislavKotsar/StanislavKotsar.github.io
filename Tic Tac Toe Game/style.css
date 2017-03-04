@@ -43,7 +43,8 @@ span{
     padding: 20px;
     border: 1px solid #888;
     width: 35%;
-    font-family: Comic Sans, Comic Sans MS, cursive;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 1px;
 }
 
 /* The Close Button */
@@ -77,7 +78,7 @@ display: flex;
 #Tic, #Tac{
   font-family: 'Fredoka One', cursive;
   font-weight: 900;
-  font-size:18pt;
+  font-size: 4em;
   font-weight: normal;
   border: none;
     padding: 9px 9px 9px 9px;
