@@ -1,10 +1,25 @@
+
+@font-face{
+	font-family: "digital_7";
+	src: url('digital-7.ttf');
+}
+
 body{
-   background-image:url(https://i.imgsafe.org/f6b971768b.jpg);
+   background-image:url("../img/calc.jpg");
+
 }
 h1{
   margin-top:65px;
   margin-bottom:65px;
+  font-family: "digital_7";
+  color: #9ED1A1;
+  font-size: 5em;
 }
+
+span{
+  background: rgba(0,0,0,0.5);
+}
+
 #calculator{
   width:355px;
   background-color:#E5D2CA;
@@ -17,8 +32,9 @@ h1{
   height:100px;
   background-color:#9ED1A1;
   font-size:40px;
-font-weight: 800;
+  font-weight: 800;
   text-align: right;
+  font-family: digital_7;
   
 }
 
@@ -64,13 +80,19 @@ background-color:#FF7373;
 .relative{
       position: relative;
     left: 10px;
-    bottom:5px;
+    bottom:16px;
     
     color:#3C733A;
-  font-size:15px;
+  
 }
 #screen{
-  margin-bottom:0px;
+  margin-bottom:0;
+  font-size: 50px;
+}
+
+#littleScr{
+	margin-top: 0;
+	font-size: 20px;
 }
 
 .standart

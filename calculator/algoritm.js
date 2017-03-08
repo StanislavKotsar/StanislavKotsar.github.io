@@ -14,18 +14,27 @@ var oper;
 var trinity = "..."; 
 
 function addN(){
+  console.log(pl,operation," addN");
   pl.push(operation);
-  pl.push(num); 
-  string = string.concat(num, operation);
+  console.log(num, "num");
+  if(num!==0){
+    pl.push(num);
+    string =string.concat(num);
+  }
+  string = string.concat(operation);
+  lScreen.textContent = string;
   // lScreen.textContent = string;
+  console.log(pl," addN END");
 
 }
 
 function actZero(){
+  
   pl.push(num);
   pl.push(operation);
   string = string.concat(num, operation);
-  // lScreen.textContent = string;
+  console.log(num, pl, "actZero");
+  lScreen.textContent = string;
 
 }
 
@@ -70,7 +79,7 @@ if(t===$("#AC").text()||t==="CE"){
   act = 0; 
   $("#screen").html("0");
   string = "";
-  // lScreen.textContent = string;
+  lScreen.textContent = string;
 
 }
  if(t==="zero"&&number.length<10){
@@ -93,37 +102,33 @@ if(t==="dot"&&dot===0&&l.length>0){
     pl.push(num);
     var oper = pl[1];
     pl.splice(1, 1);
-
+    console.log(pl);
     if(oper === "+"){
-    pl= pl.reduce(function(a,b){
-    return a+b;});}
+
+      pl = [pl.reduce(function(a,b){
+        return a+b;})];
+      }
     else if(oper === "-"){
-    pl= pl.reduce(function(a,b){
-    return a-b;});}
+
+      pl = [pl.reduce(function(a,b){
+        return a-b;})];
+      }
     else if(oper === "*"){
-      pl=pl.filter(function(a){
-      return Boolean(a)===true;
-      });
-    pl= pl[0]*pl[1]; 
+      pl= [pl[0]*pl[1]]; 
     }
-    else if(oper === "/"){
-      pl=pl.filter(function(a){
-      return Boolean(a)===true;
-      });
-       
-      pl= pl[0]/pl[1];
+    else if(oper === "/"){      
+      pl= [pl[0]/pl[1]];
+      console.log(pl);
 
     }
-    $("#screen").html(pl);
+
+   
+    console.log(pl);
     oper="";
     
     var n = pl.toString();
-    if(n.length>10&&pl>9999999999){
-      n=n.slice(0, 10);
-      pl=Number(n);
-      $("#p").html("Erorr");
-    }
-    if(typeof(pl)==="object"){
+
+    if(typeof(pl)==="object"&&Boolean(pl[0]===false)){
       pl="0";
     }
     var test = pl.toString();
@@ -131,18 +136,22 @@ if(t==="dot"&&dot===0&&l.length>0){
       test=test.slice(0,10);
       pl=Number(test);
     }
-    
-    $("#screen").html(pl);
-    
-    pl=[pl];
+    if(pl[0]>9999999999){
+      n=n.slice(0, 10);
+      lScreen.textContent="Erorr";
+    }else{
+      string = "" + pl[0] + "";
+      lScreen.textContent= string;
+    }
+
+
+    $("#screen").html(pl[0]);
     number ="";
     dot=0;
     act=1;
+    console.log(pl," result");
     }
   
-
-
-
 
    if(t==="plus"||t==="minus"||t==="multiply"||t==="division"){
     change(t); 
@@ -159,29 +168,23 @@ if(t==="dot"&&dot===0&&l.length>0){
   if(pl.length>3){
 
     if(string.length<30){
-      // lScreen.textContent = string;
+      lScreen.textContent = string;
     }
     var opert = pl[1];
+    console.log(pl," pl.length>3");
     var add = pl[3];
     pl.pop();
     pl.splice(1, 1);
     
 if(opert === "+"){
     pl= pl.reduce(function(a,b){ return a+b;});
-
   }else if(opert === "-"){
     pl= pl.reduce(function(a,b){ return a-b;});
-
   }else if(opert === "*"){
-
-    pl=pl.filter(function(a){ return Boolean(a)===true;});
     pl= pl.reduce(function(a,b){ return a*b;}); 
-
-  }else if(opert === "/"){
-
-    pl=pl.filter(function(a){ return Boolean(a)===true;});
+  }else if(opert === "/"){    
     pl= pl.reduce(function(a,b){ return a/b;}); 
-
+   
     }
     
     $("#screen").html(pl);
@@ -189,6 +192,7 @@ if(opert === "+"){
     opert="";
     pl =[pl];
     pl.push(add);
+    console.log(pl," add");
 
 
     
