@@ -7,11 +7,11 @@ var lScreen = document.getElementById("littleScr");
 var number="";
 var pl=[];
 var operation ="";
-var num ; 
+var num ;
 var dot = 0;
 var act =0;
-var oper; 
-var trinity = "..."; 
+var oper;
+var trinity = "...";
 
 function addN(){
   console.log(pl,operation," addN");
@@ -29,7 +29,7 @@ function addN(){
 }
 
 function actZero(){
-  
+
   pl.push(num);
   pl.push(operation);
   string = string.concat(num, operation);
@@ -46,7 +46,7 @@ function reset(){
 function change(t){
       switch(t){
       case "plus":
-        operation="+"; 
+        operation="+";
         break;
       case "minus":
         operation="-";
@@ -62,35 +62,35 @@ function change(t){
 
 $(this).on("click", function (event){
  var t=event.target.id;
-  
+
     if(number.length<10&&t!=="AC"&&t.length===1){
 
     number=number.concat(Number(t));
     $("#screen").html(number);
-    
+
  }
-var res = $( "#screen" ).text();  
+var res = $( "#screen" ).text();
 if(t===$("#AC").text()||t==="CE"){
   number="";
   pl=[];
   operation ="";
-  num = 0; 
+  num = 0;
   dot = 0;
-  act = 0; 
+  act = 0;
   $("#screen").html("0");
   string = "";
   lScreen.textContent = string;
 
 }
  if(t==="zero"&&number.length<10){
-    if(number.length===0||Number(number)===0){      
+    if(number.length===0||Number(number)===0){
     number="0";
     }else{
-    number=number.concat("0");} 
+    number=number.concat("0");}
     $("#screen").html(number);
   }
   var l = $("#screen").text();
-  
+
 if(t==="dot"&&dot===0&&l.length>0){
   number= number.concat(".");
   $("#screen").html(number);
@@ -114,20 +114,20 @@ if(t==="dot"&&dot===0&&l.length>0){
         return a-b;})];
       }
     else if(oper === "*"){
-      pl= [pl[0]*pl[1]]; 
+      pl= [pl[0]*pl[1]];
     }
-    else if(oper === "/"){      
+    else if(oper === "/"){
       pl= [pl[0]/pl[1]];
-      console.log(pl);
+      console.log(pl, "divide");
 
     }
 
-   
+
     console.log(pl);
     oper="";
-    
-    var n = pl.toString();
 
+    var n = pl[0].toString();
+    console.log(n);
     if(typeof(pl)==="object"&&Boolean(pl[0]===false)){
       pl="0";
     }
@@ -139,7 +139,12 @@ if(t==="dot"&&dot===0&&l.length>0){
     if(pl[0]>9999999999){
       n=n.slice(0, 10);
       lScreen.textContent="Erorr";
-    }else{
+    }else if (n.length>=10) {
+      n= n.slice(0, 10);
+      console.log(n);
+      pl = [Number(n)];
+    }
+    else{
       string = "" + pl[0] + "";
       lScreen.textContent= string;
     }
@@ -151,10 +156,10 @@ if(t==="dot"&&dot===0&&l.length>0){
     act=1;
     console.log(pl," result");
     }
-  
+
 
    if(t==="plus"||t==="minus"||t==="multiply"||t==="division"){
-    change(t); 
+    change(t);
     num = Number(number);
     if(act===1){
       addN();
@@ -163,7 +168,7 @@ if(t==="dot"&&dot===0&&l.length>0){
       }
     reset();
   }
-  
+
 
   if(pl.length>3){
 
@@ -175,18 +180,18 @@ if(t==="dot"&&dot===0&&l.length>0){
     var add = pl[3];
     pl.pop();
     pl.splice(1, 1);
-    
+
 if(opert === "+"){
     pl= pl.reduce(function(a,b){ return a+b;});
   }else if(opert === "-"){
     pl= pl.reduce(function(a,b){ return a-b;});
   }else if(opert === "*"){
-    pl= pl.reduce(function(a,b){ return a*b;}); 
-  }else if(opert === "/"){    
-    pl= pl.reduce(function(a,b){ return a/b;}); 
-   
+    pl= pl.reduce(function(a,b){ return a*b;});
+  }else if(opert === "/"){
+    pl= pl.reduce(function(a,b){ return a/b;});
+
     }
-    
+
     $("#screen").html(pl);
 
     opert="";
@@ -195,10 +200,8 @@ if(opert === "+"){
     console.log(pl," add");
 
 
-    
+
 }//if oper<3
 
 });
 });
-
-
