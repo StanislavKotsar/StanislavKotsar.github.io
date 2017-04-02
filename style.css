@@ -181,7 +181,6 @@ margin: 0 auto;
 }
 
 #contact > div p{
-
 	width: 80%;
 	margin: 0 auto;
 	font-family: 'Gloria Hallelujah', cursive;
@@ -191,6 +190,7 @@ margin: 0 auto;
     	0px 3px 2px rgba(38,45,77,0.3);
 }
 #contact > div:last-of-type p{
+  text-align: center;
 	font-size: 1em;
 	width: 100%;
 	margin-bottom: 2%;
