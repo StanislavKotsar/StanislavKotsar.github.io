@@ -13,8 +13,8 @@ body> div{
 	font-size: 3em;
 	 -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
-	margin: 0 auto;   
-	
+	margin: 0 auto;
+
 }*/
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
@@ -57,7 +57,7 @@ body> div{
  #lpage h1 {
 	font-family: 'Lemon', cursive;
 	color: rgba(230, 236, 188, 0.8);
-	animation:fadeIn ease-in 3s; 
+	animation:fadeIn ease-in 3s;
 	 text-shadow:
         0px 4px 3px rgba(0,0,0,0.4),
 		0px 8px 13px rgba(0,0,0,0.1),
@@ -108,7 +108,7 @@ body> div{
 	align-self: center;
 	margin: auto;
 }
- 
+
 
 .col-lg-4 {
 
@@ -121,7 +121,7 @@ body> div{
 	margin: auto;
 }
 
-#my_certificates img{ 
+#my_certificates img{
 	align-self: center;
 	margin: auto;
  }
@@ -132,12 +132,38 @@ body> div{
 	justify-content: flex-start;
 }
 #my_skills .row{
+  display: flex;
+  flex-wrap: wrap;
 	align-self: center;
 	width: 100%;
 	margin: auto;
 }
+#my_skills .col-lg-3{
+display: flex;
+flex-flow: column;
+  text-align: center;
+  text-shadow:
+      0px 4px 3px rgba(0,0,0,0.4),
+  		0px 8px 13px rgba(0,0,0,0.1);
+margin: 0 auto;
+}
 
 
+
+#my_skills p{
+  font-family: 'Fredoka One', cursive;
+  font-size: 2em;
+  text-align: center;
+  margin-top: -4%;
+}
+.bigicons{
+  font-size: 12em;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+.special{
+  padding-left: 7%;
+}
 #contact{
 	background-color: #B6E67F;
 	min-height: 100vh;
@@ -203,7 +229,7 @@ h1{
 	text-shadow:
     	0px 4px 3px rgba(0,0,0,0.4),
 		0px 8px 13px rgba(0,0,0,0.1);
-	
+
 }
 h3{
 	text-align: center;
@@ -216,7 +242,7 @@ h3{
 img{
 	width: 75%;
 	margin: 0 auto;
-	box-shadow: 
+	box-shadow:
 		0px 4px 3px rgba(0,0,0,0.4),
 		0px 8px 13px rgba(0,0,0,0.1),
 		0px 18px 23px rgba(0,0,0,0.1);
@@ -256,5 +282,3 @@ img{
   	height: 100%;
   	justify-content: space-between;
 }
-
-
