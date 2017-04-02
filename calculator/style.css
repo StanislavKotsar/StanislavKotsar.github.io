@@ -19,6 +19,9 @@ h1{
 span{
   background: rgba(0,0,0,0.5);
 }
+button{
+  outline: none;
+}
 
 #calculator{
   width:355px;
