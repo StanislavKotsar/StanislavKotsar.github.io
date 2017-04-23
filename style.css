@@ -22,19 +22,6 @@ body> div{
     border-color: transparent;
 }
 
-
-
-
-.navbar-inverse .navbar-nav>.active>a {
-    /*border-radius: 15%;*/
-    color: #fff;
-    background-color:transparent;
-}
-
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
-  background-color: transparent;
-}
-
 /*
 #btn:hover{
 	background-color: rgba(62, 62, 62, 0.7);
@@ -51,9 +38,7 @@ body> div{
 	letter-spacing: 1px;
 }
 
-li .active{
-  background: red;
-}
+
 .navbar-inverse .navbar-nav>li>a {
     color: #E6ECBC;
     text-shadow:
@@ -77,24 +62,9 @@ li .active{
         0px 4px 3px rgba(0,0,0,0.4),
 		0px 8px 13px rgba(0,0,0,0.1),
 		0px 18px 23px rgba(0,0,0,0.1);
-}
 
-#lpage div:first-of-type{
-  align-self: center;
-}
 
-#lpage button{
-  color: #515151;
-  opacity: 0.7;
-  margin: 0 auto;
-  background: transparent;
-  border: none;
-  outline: none;
 }
-.fa-chevron-down{
-  font-size: 3em;
-}
-
 #about{
 	background-color: #DCE67F;
 	justify-content: space-between;
@@ -311,25 +281,4 @@ img{
   	min-height: 100vh;
   	height: 100%;
   	justify-content: space-between;
-}
-
-
-#toTop {
-	cursor:pointer;
-	display:none;
-	color: #515151;
-	font-size: 40px;
-	line-height: 26px;
-	text-align: center;
-	text-decoration: none;
-	height: 32px;
-	width: 40px;
-	position: fixed;
-	bottom: 18px;
-	left: 18px;
-	z-index: 9999;
-
-	opacity: 0.7;
-    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=50)";
-	    filter: alpha(opacity=50);
 }
