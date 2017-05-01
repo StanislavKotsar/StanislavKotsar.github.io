@@ -13,7 +13,13 @@ $('a[href*="#"]:not([href="#"])').click(function() {
 
 $('body').scrollspy({
     target: '.navbar-fixed-top'
-})
+});
+
+$(".landing_text").delay(7000).fadeOut(2000, function(){
+  $("#lpage").css({
+    "justify-content":"flex-end"
+  });
+});
 
 var today = new Date();
 var year = today.getFullYear();
