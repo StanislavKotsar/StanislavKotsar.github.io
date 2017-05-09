@@ -74,7 +74,9 @@ li .active{
 	text-align: center;
 	padding-top: 18%;
     background-attachment: fixed;
+    background-color: purple;
     background-position: center;
+    background-color: purple;
     background-repeat: no-repeat;
     background-size: cover;
 	  background-color: #000;
@@ -145,46 +147,10 @@ li .active{
   background-repeat: no-repeat;
   opacity: 0;
   z-index: 0;
-  animation: imageAnimation 50s linear infinite;
-}
 
-.slideshow li:nth-child(1) {
-  background-image: url(img/jumbotron_cover_1.jpg)
-}
-.slideshow li:nth-child(2) {
-  background-image: url(img/simon_game.png);
-  animation-delay: 10s;
-}
-.slideshow li:nth-child(3) {
-  background-image: url(img/tic_tac_toe_game.png);
-  animation-delay: 20s;
-}
-.slideshow li:nth-child(4) {
-  background-image: url(img/random_quote_machine.png);
-  animation-delay: 30s;
-}
-.slideshow li:nth-child(5) {
-  background-image: url(img/calculator_app.png);
-  animation-delay: 40s;
 }
 
 
-@keyframes imageAnimation {
-  0% {
-    opacity: 0;
-    animation-timing-function: ease-in;
-  }
-  10% {
-    opacity: 1;
-    animation-timing-function: ease-out;
-  }
-  20% {
-    opacity: 1
-  }
-  30% {
-    opacity: 0
-  }
-}
 
 
 /* Older browser support - .no-cssanimations class added by modernizr */
@@ -385,11 +351,14 @@ img{
 
 .screen{
 	position: relative;
-	display: flex;
-  	flex-direction: column;
+
   	min-height: 100vh;
+  	width: 1400px;
   	height: 100%;
   	justify-content: space-between;
+  	margin-bottom: -50px;
+  	padding-top: 40px;
+  	padding-bottom: 40px;
 }
 
 
